@@ -1,0 +1,55 @@
+<!--Main-bar content-->
+<div class="main-container">
+  <app-header class="header"></app-header>
+  <app-presentation class="presentation"></app-presentation>
+  <div class="for-items">
+    <div class="item" *ngFor="let item of (items | async).items">
+      <div class="item-title">
+        <h1 class="font-upper">{{item.title}}</h1>
+        <h2 class="font-upper">{{item.subtitle}}</h2>
+      </div>
+      <div class="item-logo" [ngStyle]="{'background-image': 'url(' + item.url + ')'}"></div>
+      <div class="item-body-header">
+        <div class="row-between">
+          <p>Available to invest</p>
+          <p>{{item.fullInvest}}</p>
+        </div>
+        <div class="item-line">
+          <div class="item-pay-line" [ngStyle]="{'width': item.payBlockWidth + '%'}" [ngClass]="{'item-completed': item.isCompleted}"></div>
+        </div>
+      </div>
+      <div class="row-between">
+        <p>Purchase cost</p>
+        <p>{{item.purchaseCost}}</p>
+      </div>
+      <div class="row-between">
+        <p>Min.Investment</p>
+        <p>{{item.minIvest}}</p>
+      </div>
+      <div class="row-between">
+        <p>Investment type</p>
+        <p>{{item.type}}</p>
+      </div>
+      <div class="row-between">
+        <p>Mortage (LTV)</p>
+        <p>{{item.mortage}}</p>
+      </div>
+      <div *ngIf="item.period" class="row-between">
+        <p>Holding Period</p>
+        <p>{{item.period}}</p>
+      </div>
+      <div *ngIf="item.expReturn" class="row-between">
+        <p>Expected Return on Equity</p>
+        <p>{{item.expReturn}}</p>
+      </div>
+      <div *ngIf="item.maturity" class="row-between">
+        <p>Maturity</p>
+        <p>{{item.maturity}}</p>
+      </div>
+      <div *ngIf="item.rate" class="row-between">
+        <p>Interest rate</p>
+        <p>{{item.rate}}</p>
+      </div>
+    </div>
+  </div>
+</div>

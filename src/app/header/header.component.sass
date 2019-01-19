@@ -1,0 +1,28 @@
+.header-container
+  display: flex
+  justify-content: space-between
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  user-select: none
+  .title, .auth-block
+    height: 50px
+    margin-left: 15px
+    display: flex
+    align-items: center
+    color: #9eabbc
+    font-size: 17px
+    svg
+      margin-right: 10px
+      cursor: pointer
+      &:hover
+        path
+          fill: #9eabbc
+      &:active
+        path
+          fill: black
+  .auth-block
+    padding-right: 15px
+    .account-name
+      margin-right: 10px
+      color: #08003c
