@@ -25,6 +25,7 @@
       margin-top: 15px
       box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2), 0 2px 11px 0 rgba(0, 0, 0, 0.19) !important
       cursor: pointer
+      text-align: center
       .item-title
         height: 50px
         background: #1f2c3d
@@ -39,6 +40,7 @@
         h1
           font-size: 15px
           color: white
+          font-weight: 600
         h2
           font-size: 10px
           color: #9eadc4
@@ -67,3 +69,41 @@
           background-image: linear-gradient(to right, #f2833b , #ffcb96)
         .item-completed
           background-image: linear-gradient(to right, #419422 , #b2ea53)
+      .item-button-detail, .item-button-subscribe, .item-button-wait
+        margin: 20px auto
+        border: none
+        border-radius: 3px
+        width: 70%
+        height: 35px
+        color: white
+        text-transform: uppercase
+        cursor: pointer
+        &:focus
+          outline: none
+      .item-button-detail
+        background: rgb(219,113,55)
+        &:hover
+          background: rgba(219,113,55,0.5) !important
+        &:active
+          background: rgb(219,113,55) !important
+        &:focus
+          background: rgb(219,113,55)
+      .item-button-subscribe
+        background: rgb(80,184,61)
+        &:hover
+          background: rgba(80,184,61,0.5) !important
+        &:active
+          background: rgb(80,184,61) !important
+        &:focus
+          background: rgb(80,184,61)
+      .item-button-wait
+        border: 1px solid #3ec59a
+        background: white
+        color: #68c153
+        text-transform: none
+        &:hover
+          border: 2px solid rgba(62,197,154,0.5) !important
+        &:active
+          border: 1px solid rgb(62,197,154) !important
+        &:focus
+          border: 1px solid rgb(62,197,154)

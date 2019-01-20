@@ -22,7 +22,8 @@ export const initialState: ItemsState = {
       maturity: '',
       rate: '',
       payBlockWidth: '80',
-      isCompleted: ''
+      isCompleted: '',
+      typeButton: 'detail'
     }, {
       title: 'Calla Rossa Complex',
       subtitle: 'Carouge, Geneva',
@@ -37,7 +38,8 @@ export const initialState: ItemsState = {
       maturity: '',
       rate: '',
       payBlockWidth: '0',
-      isCompleted: ''
+      isCompleted: '',
+      typeButton: 'subscribe'
     }, {
       title: 'Hauts de vesenaz',
       subtitle: 'Vesenaz, Geneve',
@@ -52,7 +54,8 @@ export const initialState: ItemsState = {
       maturity: '7 years',
       rate: '6.50%',
       payBlockWidth: '100',
-      isCompleted: ''
+      isCompleted: '',
+      typeButton: 'wait'
     }
   ],
   selected: 0

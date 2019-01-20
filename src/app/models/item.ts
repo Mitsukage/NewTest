@@ -13,4 +13,5 @@ export interface Item {
   rate: string;
   payBlockWidth: string;
   isCompleted: string;
+  typeButton: string;
 }
