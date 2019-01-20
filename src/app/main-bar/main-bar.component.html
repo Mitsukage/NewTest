@@ -50,6 +50,9 @@
         <p>Interest rate</p>
         <p>{{item.rate}}</p>
       </div>
+      <input *ngIf="item.typeButton === 'detail'" type="button" value="More Details" class="item-button-detail">
+      <input *ngIf="item.typeButton === 'subscribe'" type="button" value="Pre-subscribe" class="item-button-subscribe">
+      <input *ngIf="item.typeButton === 'wait'" type="button" value="Add me to waiting list" class="item-button-wait">
     </div>
   </div>
 </div>
